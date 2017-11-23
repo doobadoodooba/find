@@ -6,7 +6,7 @@ function find(array, criteriaFn) {
     if (criteriaFn(deepCopy[0])) {
       return deepCopy[0]
     }
-    // Now we can just drop the value returned by this on the floor as it manipulates the original array.
+    // Now we can just drop the value returned by this on the floor as it manipulates the original deepCopy.
     deepCopy.shift()
   }
   return null
