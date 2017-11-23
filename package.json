@@ -1,0 +1,11 @@
+{
+  "name": "find",
+  "version": "1.0.0",
+  "description": "find in array",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "doobadoodooba",
+  "license": "ISC"
+}
