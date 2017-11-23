@@ -16,3 +16,6 @@ function find(array, criteriaFn) {
   }
   return null
 }
+
+
+module.exports = find;
