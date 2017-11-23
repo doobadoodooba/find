@@ -24,4 +24,9 @@ describe('find', () => {
           return (oneDimensionalArray.indexOf('t') >= 0);
       })).to.have.all.members(['e', 'a', 'o', 'a', 't'])
     })
+    it('return null if nothing fits the cireteria', () => {
+      expect(find(twoDimentionalArray, function(oneDimensionalArray) {
+          return (oneDimensionalArray.indexOf('I') >= 0);
+      })).to.equal(null);
+    })
 })
