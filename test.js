@@ -4,6 +4,7 @@ const expect = require('chai').expect
 const twoDimentionalArray = [['a', 'a', 'a', 'b', 'a'],
                              ['e', 'a', 'o', 'a', 't'],
                              ['a', 'a', 'a', 'a', 'a'],
+                             [],
                              ['a', 'a', 'x', 'a', 'a'],
                              ['a', 'y', 'o', 'a', 'a']]
 

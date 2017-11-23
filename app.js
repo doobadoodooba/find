@@ -1,16 +1,8 @@
 function find(array, criteriaFn) {
-  // Using map we make a deep copy and simplify the algoritm.
-  let deepCopy = array.map((item) => {return item})
-
-  while (deepCopy.length) {
-    if (criteriaFn(deepCopy[0])) {
-      return deepCopy[0]
-    }
-    // Now we can just drop the value returned by this on the floor as it manipulates the original array.
-    deepCopy.shift()
+  if(!array.length){
+      return null;
   }
-  return null
+  return criteriaFn(array[0]) ? array[0] : find(array.slice(1), criteriaFn)
 }
-
 
 module.exports = find;
